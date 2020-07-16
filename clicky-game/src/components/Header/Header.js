@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <section className={styles.header}>
             <header className={styles.header}>
-            <h1>Clicky Game!</h1>
+            <h1>Clicky Game - Mean Girls Edition</h1>
         </header> 
         </section>
     );
