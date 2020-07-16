@@ -1,0 +1,9 @@
+.footer {
+    background-color: purple;
+    padding: 20px;
+    margin: 20px;
+}
+
+.image {
+    max-width: 60px;
+}

@@ -1,8 +1,9 @@
 .photo {
     max-width: 325px;
+    margin: 20px;
 }
 
-    .card {
+    /*.card {
         background: #fff;
         border-radius: 2px;
         height: 200px;
@@ -48,4 +49,4 @@
       
       .card > .remove:hover {
         color: #d50000;
-      }   
+      }*/   
