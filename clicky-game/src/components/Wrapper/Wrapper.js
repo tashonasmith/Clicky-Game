@@ -1,9 +1,10 @@
 import React from "react";
-import ImageCard from "../Images/ImageCard"
 import styles from "./Wrapper.module.css"
 import Directions from "../Directions/Directions"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import ImageCard from "../Images/ImageCard"
+
 
 const Wrapper = (props) => {
     const coolImages = props.list.map((images) => {
@@ -15,12 +16,12 @@ const Wrapper = (props) => {
     })
     return (
       <div className={styles.wrapper}> 
+      <ul>
         <Header />
-        <Directions />
-        <div>
-          {coolImages}
-        </div>
-        <Footer />
+        <Directions /> 
+      </ul>
+      {coolImages}
+      <Footer />
       </div>
     )
 }

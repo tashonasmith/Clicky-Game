@@ -3,6 +3,10 @@
     margin: 20px;
 }
 
+.card {
+  display: flex;
+}
+
     /*.card {
         background: #fff;
         border-radius: 2px;
