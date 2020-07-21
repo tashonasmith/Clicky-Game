@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import React from 'react';
 import './App.css';
 import Wrapper from "./components/Wrapper/Wrapper";
 import images from "./data/images.json";
@@ -9,13 +8,6 @@ import ImageCard from "./components/Images/ImageCard";
 import Message from "./components/Message/Message"
 import Container from "./components/Container/Container"
 
-// const shuffleArray = array => {
-//   for (let i = array.length -1; i > 0; i--) {
-//     let j = Math.floor(Math.random() * (i + 1))
-//     [array[i], array[j]] = [array[j], array[i]]
-//   }
-//   return array
-// }
 
 function shuffleImages(array) {
   for (let i = array.length -1; i >0; i--) {
@@ -100,137 +92,3 @@ class App extends Component {
 }
 
 export default App
-// const App = () => {
-//   return (
-//     <>
-//       <Wrapper list={images}/>
-//     </>
-//   )
-// }
-
-// export default App;
-
-// class App extends Component {
-//   state = {
-//     message: "Click an image to begin!",
-//     topScore: 0,
-//     curScore: 0,
-//     images: images,
-//     unselected: images
-//   }
-  
-//   componentDidMount() {
-//   }
-  
-//   shuffleArray = array => {
-//     for (let i = array.length - 1; i > 0; i--) {
-//       let j = Math.floor(Math.random() * (i + 1));
-//       [array[i], array[j]] = [array[j], array[i]];
-//     }
-//   }
-  
-//   selectedImage = name => {
-//     const findImage = this.state.unselected.find(item => item.name === name);
-  
-//     if (findImage === undefined) {
-//       this.setState({
-//         message: "You guessed incorrectly!",
-//         topScore: (this.state.curScore ) ? this.state.curScore : this.state.topScore,
-//         images: images,
-//         unselected: images
-//       })
-//     }
-//     else {
-//       const newImages = this.state.unselected.filter(item => item.name !== name)
-//       this.setState({
-//         message: "You guessed correctly!",
-//         curScore: this.state.curScore + 1,
-//         images: images,
-//         unselected: newImages
-//       })
-//     }
-//     this.shuffleArray(images)
-//   }
-  
-//   render() {
-//     return (
-//       <Wrapper>
-//         <Header 
-//           message={this.state.message}
-//           curScore={this.state.curScore}
-//           topScore={this.state.topScore}
-//         />
-//         <Directions />
-//         {
-//           this.state.images.map(image => (
-//             <ImageCard
-//               name={image.name}
-//               image={image.image}
-//               selectImage={this.selectImage}
-//               curScore={this.state.curScore}
-//             />
-//           ))
-//         }
-//       </Wrapper>
-//     )
-//   }
-
-// }
-
-// export default App;
-
-// componentDidMount() {
-// }
-
-// shuffleArray = array => {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     let j = Math.floor(Math.random() * (i + 1));
-//     array[i], array[j] = array[j] = array[i];
-//   }
-// }
-
-// selectedImage = name => {
-//   const findImage = this.state.unselected.find(item => item.name === name);
-
-//   if (findImage === undefined) {
-//     this.setState({
-//       message: "You guessed incorrectly!",
-//       topScore: (this.state.curScore ) ? this.state.curScore : this.state.topScore,
-//       images: images,
-//       unselected: unselected
-//     })
-//   }
-//   else {
-//     const newImages = this.state.unselected.filter(item => item.name !== name)
-//     this.setState({
-//       message: "You guessed correctly!",
-//       curScore: this.state.curScore + 1,
-//       images: images,
-//       unselected: newImages
-//     })
-//   }
-//   this.shuffleArray(images)
-// }
-
-// render() {
-//   return (
-//     <Wrapper>
-//       <Header 
-//         message={this.state.message}
-//         curScore={this.state.curScore}
-//         topScore={this.state.topScore}
-//       />
-//       <Directions />
-//       {
-//         this.state.images.map(image => (
-//           <ImageCard
-//             name={image.name}
-//             image={image.image}
-//             selectImage={this.selectImage}
-//             curScore={this.state.curScore}
-//           />
-//         ))
-//       }
-//     </Wrapper>
-//   )
-// }
